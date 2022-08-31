@@ -1,0 +1,341 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+    font-family: 'Mulish', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nav-bar{
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-bar ul{
+    display: flex;
+    gap: 50px;
+    margin-right: 50px;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: #222;
+    transition: 0.1s;
+}
+
+.nav-bar ul li a:hover{
+    color: grey;
+}
+
+.first-background {
+    width: 100%;
+    height: 500px;
+    margin-top: 50px;
+    background-image: url("first-wallpaper.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.header-text{
+    position: absolute;
+    top: 220px;
+    left: 10%;
+}
+
+.header-text h1{
+    font-size: 50px;
+    font-family: 'Aboreto', cursive;
+}
+
+.header-text p{
+    font-size: 20px;
+}
+
+.header-text a{
+    text-decoration: none;
+    width: 30%;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 2px solid #222;
+    border-radius: 50px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.2s;
+}
+
+.header-text a:hover{
+    background-color: #222;
+    color: white;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 50px;
+}
+
+.about-container div{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #79DAE8;
+    width: 19%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #E8F9FD;
+    gap: 20px;
+    transition: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+    
+}
+
+.about-container div h3{
+    font-size: 15px;
+    color: #222; 
+}
+
+.about-container div svg{
+    width: 30px;
+}
+
+#education-info{
+    width: 100%;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#education-info h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#skill-info{
+    display: none;
+    justify-content: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    gap: 150px;
+    width: 100%;
+    height: 300px;
+}
+
+#skill-info ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style-type: square;
+}
+
+#projects-info{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    gap: 150px;
+    width: 100%;
+    height: 300px;
+}
+
+.about-container div:hover{
+    background-color: #0AA1DD;
+    cursor: pointer;
+}
+
+#bio-info{
+    width: 100%;
+    height: 300px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+#services{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#services-h2{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+#services-divs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+#services-divs div{
+    width: 30%;
+    height: 200px;
+    border: 2px solid #79DAE8;
+    border-radius: 50px;
+    background-color: #E8F9FD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: 0.5s;
+}
+
+#services-divs div p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+}
+
+#services-divs div svg{
+    width: 50px;
+}
+
+#services-divs div h2{
+    font-size: 20px;
+}
+
+#hire-me{
+    text-decoration: none;
+    width: 20%;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    border: 2px solid #222;
+    border-radius: 50px;
+    font-family: 'Playfair Display', serif;
+    transition: 0.2s;
+}
+
+#hire-me:hover{
+    background-color: #222;
+    color: white;
+}
+
+#contact{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#contact ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contact ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+#contact ul li svg{
+    width: 50px;
+    height: 50px;
+}
+
+#contact h1{
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+}
